@@ -71,7 +71,7 @@ function App() {
         <div className={!showSlider ? 'amounts' : 'amounts hidden'}>
           <section>
             <h2>Enter Original Amount</h2>
-            <div className="box value" onClick={() => setShowNumpad(true)}>{originalAmount.toFixed(2)}</div>
+            <div className="box value enteramt" onClick={() => setShowNumpad(!showNumpad)}>{originalAmount.toFixed(2)}</div>
           </section>
           <section>
             <h2>Calculated Tip</h2>
